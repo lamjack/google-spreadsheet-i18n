@@ -1,50 +1,8 @@
 {
-    "env": {
-        "node": true
-    },
-    "rules": {
-        "key-spacing": [
-            1,
-            {
-                "beforeColon": false,
-                "afterColon": true
-            }
-        ],
-        "comma-spacing": [
-            1,
-            {
-                "before": false,
-                "after": true
-            }
-        ],
-        "object-curly-spacing": [
-            "warn",
-            "always"
-        ],
-        "no-trailing-spaces": [
-            "warn"
-        ],
-        "no-multiple-empty-lines": [
-            "warn",
-            {
-                "max": 1
-            }
-        ],
-        "no-undef": 1,
-        "quotes": [
-            1,
-            "single"
-        ],
-        "no-underscore-dangle": 0,
-        "no-unused-vars": 1,
-        "no-debugger": 1,
-        "indent": [
-            "warn",
-            4
-        ],
-        "semi": [
-            "warn",
-            "always"
-        ]
-    }
+  "parser": "babel-eslint",
+  "extends": ["prettier"],
+  "rules": {
+    "semi": ["error", "always"],
+    "eol-last": ["error", "always"]
+  }
 }
