@@ -1,7 +1,8 @@
-google-spreadsheet-i18n
-===
+# google-spreadsheet-i18n
 
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/google-spreadsheet-i18n)
 
+Export Google Spreadsheets to I18n JSON files, though Node API or CLI.
 
 ## Installation
 
@@ -10,7 +11,6 @@ CLI:
 ```bash
 npm i google-spreadsheet-i18n -g
 ```
-
 
 ## Help
 
@@ -72,6 +72,7 @@ It's will create three json file,
     "chinese": "汉语"
 }
 ```
+
 ```
 # en.json
 {
