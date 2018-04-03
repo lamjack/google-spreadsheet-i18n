@@ -1,6 +1,6 @@
 {
     "name": "google-spreadsheet-i18n",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Export Google Spreadsheets to I18n JSON files, though Node API or CLI",
     "author": "Jack Lam <jack@wizmacau.com>",
     "main": "index.js",
@@ -28,6 +28,6 @@
         "eslint-config-prettier": "^2.9.0"
     },
     "bin": {
-        "gstointl": "gstoi18n.js"
+        "gstoi18n": "gstoi18n.js"
     }
 }

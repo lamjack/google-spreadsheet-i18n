@@ -1,3 +1,14 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @Author: jack <jack@wizmacau.com>
+ * @copyright WIZ TECHNOLOGY
+ * @link https://wizmacau.com
+ * @link https://github.com/lamjack
+ * @version
+ **/
+
 var fs = require('fs');
 var GoogleSpreadsheet = require('google-spreadsheet');
 var Promise = require('bluebird');
