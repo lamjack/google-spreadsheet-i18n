@@ -29,6 +29,6 @@
         "eslint-config-prettier": "^2.9.0"
     },
     "bin": {
-        "gstoi18n": "gstoi18n.js"
+        "gstoi18n": "./gstoi18n.js"
     }
 }
