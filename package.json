@@ -1,6 +1,6 @@
 {
     "name": "google-spreadsheet-i18n",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Export Google Spreadsheets to I18n JSON files, though Node API or CLI",
     "author": "Jack Lam <jack@wizmacau.com>",
     "main": "index.js",
