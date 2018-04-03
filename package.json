@@ -1,7 +1,7 @@
 {
-    "name": "google-spreadsheet-to-intl",
+    "name": "google-spreadsheet-i18n",
     "version": "1.0.0",
-    "description": "Export Google Spreadsheets to JSON files for react-intl, though Node API or CLI",
+    "description": "Export Google Spreadsheets to I18n JSON files, though Node API or CLI",
     "author": "Jack Lam <jack@wizmacau.com>",
     "main": "index.js",
     "scripts": {
@@ -10,6 +10,7 @@
     "license": "ISC",
     "dependencies": {
         "bluebird": "^3.5.1",
+        "cli-output": "^1.0.0",
         "commander": "^2.14.1",
         "google-spreadsheet": "^2.0.4"
     },
@@ -17,5 +18,8 @@
         "babel-eslint": "^8.2.2",
         "eslint": "^4.18.1",
         "eslint-config-prettier": "^2.9.0"
+    },
+    "bin": {
+        "gstointl": "gstoi18n.js"
     }
 }
