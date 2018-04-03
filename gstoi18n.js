@@ -12,6 +12,7 @@ app
     .version(packageData.version)
     .usage('<spreadsheet-id> [saveas] [options]')
     .option('-b, --beautify', 'Beautify final JSON')
+    .option('-e, --esmodule', 'Export with es module')
     .parse(process.argv);
 
 if (app.args.length < 1) {
@@ -35,7 +36,14 @@ helper
 
             Object.keys(result).forEach(function(value) {
                 var content = JSON.stringify(result[value], null, app.beautify ? 4 : null);
-                var file = saveas + '/' + value + '.json';
+                var extension = '.json';
+
+                if (app.esmodule) {
+                    extension = '.js';
+                    content = 'export default ' + content + ';\r\n';
+                }
+
+                var file = saveas + '/' + value + extension;
                 out.info('Creating ' + file);
                 return Promise.promisify(fs.writeFile)(file, content, 'utf-8');
             });

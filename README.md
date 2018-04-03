@@ -22,6 +22,7 @@ Usage: gstoi18n <spreadsheet-id> [saveas] [options]
 Options:
     -V, --version   output the version number
     -b, --beautify  Beautify final JSON
+    -es, --esmodule Export with es module
     -h, --help      output usage information
 ```
 
