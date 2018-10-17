@@ -372,9 +372,9 @@ exports.spreadsheetToJson = function(options) {
         .then(function(result) {
             var contents = {};
             result.forEach(function(item, index) {
-                let currentIdx = item.key;
+                let currentIdx = item.key || item.Key;
                 Object.keys(item)
-                    .filter(k => k !== 'key')
+                    .filter(k => k.toLowerCase() !== 'key')
                     .forEach(function(key) {
                         if (!contents.hasOwnProperty(key)) {
                             contents[key] = {};

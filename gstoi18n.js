@@ -13,6 +13,7 @@ app
     .usage('<spreadsheet-id> [saveas] [options]')
     .option('-b, --beautify', 'Beautify final JSON')
     .option('-e, --esmodule', 'Export with es module')
+    .option('-p, --property [propertyMode]', 'File name case', /^(camel|pascal|nospace|default)$/i)
     .parse(process.argv);
 
 if (app.args.length < 1) {
@@ -21,6 +22,7 @@ if (app.args.length < 1) {
 
 app.spreadsheetId = app.args[0] || app.spreadsheetId;
 app.beautify = typeof app.beautify !== 'undefined' ? app.beautify : true;
+app.propertyMode = app.property;
 
 var saveas = app.args[1];
 
