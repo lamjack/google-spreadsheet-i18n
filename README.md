@@ -23,6 +23,7 @@ Options:
     -V, --version   output the version number
     -b, --beautify  Beautify final JSON
     -es, --esmodule Export with es module
+    -p, --property  File name case (pascal, default, camel, nospace)
     -h, --help      output usage information
 ```
 
