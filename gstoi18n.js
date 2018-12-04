@@ -10,7 +10,7 @@ var packageData = require('./package.json');
 
 app
     .version(packageData.version)
-    .usage('<spreadsheet-id> [saveas] [options]')
+    .usage('<spreadsheet-id> [saveas] [worksheet] [options]')
     .option('-b, --beautify', 'Beautify final JSON')
     .option('-e, --esmodule', 'Export with es module')
     .option('-p, --property [propertyMode]', 'File name case', /^(camel|pascal|nospace|default)$/i)
@@ -25,6 +25,7 @@ app.beautify = typeof app.beautify !== 'undefined' ? app.beautify : true;
 app.propertyMode = app.property;
 
 var saveas = app.args[1];
+app.worksheet = app.args[2];
 
 helper
     .spreadsheetToJson(app)
