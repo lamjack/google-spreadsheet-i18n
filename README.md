@@ -1,6 +1,6 @@
 # google-spreadsheet-i18n
 
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/google-spreadsheet-i18n)
+[![npm](https://img.shields.io/npm/v/google-spreadsheet-i18n.svg)](https://www.npmjs.com/package/google-spreadsheet-i18n)
 
 Export Google Spreadsheets to I18n JSON files, though Node API or CLI.
 
