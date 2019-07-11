@@ -31,10 +31,6 @@ app.propertyMode = app.property;
 
 var saveas = app.args[1];
 
-// console.log('aa', app, app.worksheet );
-// app.worksheet = app.args[2];
-// console.log(' app.worksheet', app.worksheet, Array.isArray( app.worksheet), app.args[2]);
-// return;
 helper
     .spreadsheetToJson(app)
     .then(function(result) {
