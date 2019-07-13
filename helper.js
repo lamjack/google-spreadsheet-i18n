@@ -370,6 +370,9 @@ exports.spreadsheetToJson = function(options) {
             return expectMultipleWorksheets ? finalList : finalList[0];
         })
         .then(function(result) {
+            // Merge results keys into single doc
+            if(expectMultipleWorksheets) result = result.reduce((acc, x) => acc.concat(x), []);
+
             var contents = {};
             result.forEach(function(item, index) {
                 let currentIdx = item.key || item.Key;

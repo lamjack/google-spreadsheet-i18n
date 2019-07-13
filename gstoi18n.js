@@ -8,9 +8,14 @@ var out = require('cli-output');
 var helper = require('./helper');
 var packageData = require('./package.json');
 
+function collect(value, previous) {
+    return previous.concat([value]);
+}
+
 app
     .version(packageData.version)
-    .usage('<spreadsheet-id> [saveas] [worksheet] [options]')
+    .usage('<spreadsheet-id> <saveas>')
+    .option('-w, --worksheet <value>', 'specify worksheet', collect, [])
     .option('-b, --beautify', 'Beautify final JSON')
     .option('-e, --esmodule', 'Export with es module')
     .option('-p, --property [propertyMode]', 'File name case', /^(camel|pascal|nospace|default)$/i)
@@ -25,7 +30,6 @@ app.beautify = typeof app.beautify !== 'undefined' ? app.beautify : true;
 app.propertyMode = app.property;
 
 var saveas = app.args[1];
-app.worksheet = app.args[2];
 
 helper
     .spreadsheetToJson(app)

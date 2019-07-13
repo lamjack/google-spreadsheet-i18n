@@ -1,6 +1,6 @@
 {
     "name": "google-spreadsheet-i18n",
-    "version": "1.0.6",
+    "version": "2.0.0",
     "description": "Export Google Spreadsheets to I18n JSON files, though Node API or CLI",
     "author": "Jack Lam <jack@wizmacau.com>",
     "main": "index.js",
@@ -23,8 +23,8 @@
     "dependencies": {
         "bluebird": "^3.5.1",
         "cli-output": "^1.0.0",
-        "commander": "^2.14.1",
-        "google-spreadsheet": "^2.0.4"
+        "commander": "^2.20.0",
+        "google-spreadsheet": "^2.0.7"
     },
     "engines": {
         "node": ">=4"
